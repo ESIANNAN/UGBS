@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscribe to Updates</title>
+    <title>CONTACT US</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9b60be4f95.js"></script>
 </head>
@@ -19,7 +19,44 @@
         </div>
     </div>
 
-  
+<div class="contact-text">
+    <p>Contact Us</p>
+</div>
+<div class="contact-description">
+    <p>Please fill out the form below if you d like us to get in touch with you for a complimentary 
+    consultation on how we can assist you.</p>
+  </div>
+
+  <form id="contactForm" method="POST" action="send_email.php">
+    <div class="form-group">
+        <label for="name">First name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    
+    <button type="submit">Submit</button>
+</form>
+<div class="checkbox-group">
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <label for="newsletter">By checking this box and submitting your information, you are granting us permission to email you. 
+       <p>You may unsubscribe at any time.</p> </label>
+</div>
+
+
 
     <footer>
         <div class="row">
