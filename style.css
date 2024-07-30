@@ -422,7 +422,7 @@ form button .fa-solid {
     text-align: left;
     margin-top: 30px;
     font-size: 24px;
-    color: blue;
+    color:  #002D62;
     margin-left: 130px;
     padding: 10px;
     cursor: pointer;
@@ -435,5 +435,145 @@ form button .fa-solid {
     margin-bottom: 20px;
     
 }
+.contact-text p {
+    font-size: 24px; 
+    font-weight: bold; 
+    padding: 0 280px;
+    margin-top: 60px; 
+}
+.contact-description{
+    color:  #0b4a91;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 0 280px; 
+    margin-bottom: 50px; 
+}
+/* General form container styling */
+/* General form container styling */
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Container for label and input to align them side by side */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Align label and input vertically */
+    margin-bottom: 20px; /* Space between elements */
+}
+
+/* Styling labels */
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: left; /* Align label text to the left */
+}
+
+/* Styling input fields and textarea */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px; /* Space between elements */
+}
+
+/* Styling textarea specifically */
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+    width: 500px; /* Fixed width for the input fields */
+}
+
+/* Optional: Set a fixed width */
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 500px; /* Fixed width for the input fields */
+}
 
 
+/* Styling the submit button */
+#contactForm button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px; /* Space above the button */
+}
+
+/* Button hover effect */
+#contactForm button:hover {
+    background-color: #0056b3;
+}
+/* checkbox-styles.css */
+
+/* Styling the container for the checkbox and label */
+.checkbox-group {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 430px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* Custom checkbox styling */
+.checkbox-group input[type="checkbox"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    appearance: none;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Checkbox tick mark */
+.checkbox-group input[type="checkbox"]:checked::before {
+    content: '\2713'; /* Unicode check mark */
+    position: absolute;
+    left: 3px;
+    top: 0;
+    font-size: 16px;
+    color: white;
+}
+
+/* Change background and border on hover */
+.checkbox-group input[type="checkbox"]:hover {
+    border-color: red;
+}
+
+/* Change background when checked */
+.checkbox-group input[type="checkbox"]:checked {
+    background-color: red;
+    border-color: red;
+}
+
+/* Label styling */
+.checkbox-group label {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+}
