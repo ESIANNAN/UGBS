@@ -14,15 +14,15 @@ body {
 }
 
 .menu_wrapper {
-    background-color: #fff; /* White background color for the navbar */
-    color: #333; /* Text color */
+    background-color: #fff; 
+    color: #333; 
     padding: 30px 50px;
-    border-bottom: 1px solid #ccc; /* Example border for separation */
+    border-bottom: 1px solid #ccc;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end; /* Push items to the right */
+    justify-content: flex-end; 
 }
 
 .navbar ul {
@@ -33,25 +33,25 @@ body {
 }
 
 .navbar li {
-    margin-left:50px; /* Adjust spacing between items */
+    margin-left:50px; 
 }
 
 .navbar a {
     display: flex;
-    flex-direction: column; /* Arrange icon and text vertically */
+    flex-direction: column; 
     align-items: center;
     color: #333;
     text-decoration: none;
-    font-size: 14px; /* Adjust text size */
+    font-size: 14px; 
 }
 
 .navbar a i {
-    margin-bottom: 5px; /* Space between icon and text */
-    font-size: 18px; /* Increase icon size */
+    margin-bottom: 5px; 
+    font-size: 18px; 
 }
 
 .card {
-    max-width: 800px; /* Increase max-width for larger cards */
+    max-width: 800px; 
     margin: 20px auto;
     background-color: #fff;
     border-radius: 8px;
@@ -82,13 +82,13 @@ body {
 }
 
 .card-image img {
-    width: 120%; /* Make the image 20% larger */
-    height: auto; /* Maintain aspect ratio */
+    width: 120%; 
+    height: auto; 
     display: block;
     position: absolute;
-    top: 50%; /* Adjust positioning */
-    left: 50%; /* Adjust positioning */
-    transform: translate(-50%, -50%); /* Center the image */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -96,19 +96,19 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .card {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
+        flex-direction: column; 
     }
 
     .card-content, .card-image {
-        flex: 1 1 auto; /* Reset flex properties */
-        width: 100%; /* Ensure full width */
-        padding: 20px; /* Adjust padding */
-        text-align: center; /* Center align text on smaller screens */
+        flex: 1 1 auto; 
+        width: 100%; 
+        padding: 20px; 
+        text-align: center; 
     }
 
     .card-image img {
-        width: 100%; /* Full width for images on smaller screens */
-        max-width: none; /* Remove max-width */
+        width: 100%; 
+        max-width: none;
     }
 }
 
@@ -202,17 +202,17 @@ form button .fa-solid {
     font-size: 20px;
 }
 .header-2 {
-    text-align: center; /* Center align text content */
-    padding: 40px 0; /* Adjust vertical spacing */
+    text-align: center; 
+    padding: 40px 0; 
 }
 
 .header-2 p {
-    max-width: 800px; /* Limit width to maintain readability */
-    margin: 0 auto; /* Center align within max-width */
-    padding: 0 20px; /* Add padding for better readability */
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
     color: #002D62;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px; /* Increase font size */
+    font-size: 22px; 
     font-weight: bold;
 }
 .text-1 {
@@ -220,55 +220,55 @@ form button .fa-solid {
   
 }
 .text-1 p{
-    max-width: 800px; /* Limit width to maintain readability */
-    margin: 0 auto; /* Center align within max-width */
-    padding: 0 20px; /* Add padding for better readability */
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px; /* Increase font size */
+    font-size: 22px; 
     font-weight: bold;
 }
 .button {
-    margin-top: 15px; /* Adjust this value to move the button down */
+    margin-top: 15px; 
     
 }
 .red-button {
     background-color: red;
-    color: white; /* Text color */
+    color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 15px;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease; 
 }
 
 .red-button:hover {
-    background-color: darkred; /* Darker shade when hovered */
+    background-color: darkred; 
 }
 .banner-container {
-    position: relative; /* Ensures the container acts as a positioning context */
+    position: relative; 
     width: 100%;
-    max-height: 600px; /* Adjust this value to limit the height of the banner */
-    overflow: hidden; /* Ensures the banner image doesn't overflow its container */
+    max-height: 600px; 
+    overflow: hidden; 
 }
 
 .banner-image {
     width: 100%;
-    height: 600px; /* Ensures the image maintains its aspect ratio */
-    display: block; /* Ensures the image behaves correctly */
-    object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
+    height: 600px; 
+    display: block; 
+    object-fit: cover; 
 }
 
 .button-container {
     position: absolute;
-    bottom: 50px; /* Adjust the distance from the bottom as needed */
-    right: 80px; /* Adjust the distance from the right as needed */
+    bottom: 50px; 
+    right: 80px; 
 }
 
 .schedule-button {
     display: inline-block;
     padding: 20px 30px;
-    background-color: #333; /* Button background color */
+    background-color: #333;
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -278,24 +278,24 @@ form button .fa-solid {
 }
 
 .schedule-button:hover {
-    background-color: darkred; /* Darker color on hover */
+    background-color: darkred; 
     opacity: 1; 
 }
 .centered-image {
     text-align: center;
-    padding: 70px 0; /* Adjust padding as needed */
+    padding: 70px 0; 
 }
 .centered-image img {
     width: 80%;
     height: 400px; 
-    display: block; /* Ensures the image behaves correctly */
-    margin: 0 auto; /* Center the image horizontally */
+    display: block; 
+    margin: 0 auto; 
 }
 .text-2 {
     text-align: left;
-    padding: 20px 0; /* Adjust padding as needed */
-    font-size: 24px; /* Increase font size */
-    font-weight: bold; /* Make text bold */
+    padding: 20px 0; 
+    font-size: 24px; 
+    font-weight: bold; 
 }
 
 .text-2 p {
@@ -303,34 +303,34 @@ form button .fa-solid {
     margin-left: 160px;
     
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px; /* Ensure font size matches parent */
-    font-weight: bold; /* Ensure font weight matches parent */
+    font-size: 26px; 
+    font-weight: bold; 
 }
 .red-button-2{
     margin-left: 160px;
     background-color: red;
-    color: white; /* Text color */
+    color: white;
     border: none;
     padding: 20px 30px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 25px;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease; 
 }
 .red-button-2:hover {
-    background-color: darkred; /* Darker shade when hovered */
+    background-color: darkred; 
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 80%; /* Reduce the maximum width to make the slideshow smaller */
+    max-width: 80%; 
     position: relative;
-    margin: 20px auto; /* Center the slideshow horizontally and adjust top margin */
+    margin: 20px auto; 
 }
 
 /* Hide all slides by default */
 .slideshow-container {
     position: relative;
-    max-width: 800px; /* Adjust max-width as needed */
+    max-width: 800px; 
     margin: 0 auto;
     overflow: hidden;
 }
@@ -340,33 +340,31 @@ form button .fa-solid {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px; /* Adjust spacing between pairs */
+    margin-bottom: 20px; 
 }
-
 .mySlides {
-    flex: 0 0 45%; /* Adjust width of each slide within the pair */
-    margin: 0 10px; /* Adjust margin between slides */
+    flex: 0 0 45%;
+    margin: 0 10px;
 }
-
 .slide-card {
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex; /* Ensure flexbox layout */
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
     padding: 10px;
 }
 
 
 .slide-image {
-    width: 100%; /* Ensure image takes full width of the container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
     display: block;
-    border-radius: 8px; /* Rounded corners for the image */
+    border-radius: 8px;
 }
 
 .slide-text {
@@ -399,16 +397,16 @@ form button .fa-solid {
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a darker background color */
+
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Adjust size of images inside slides */
+
 .mySlides img {
-    width: 50%; /* Ensure image fills the slide container horizontally */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 400px; /* Limit the maximum height of the images */
+    width: 50%; 
+    height: auto;
+    max-height: 400px; 
 }
 .services-title {
     text-align: left;
@@ -448,8 +446,7 @@ form button .fa-solid {
     padding: 0 280px; 
     margin-bottom: 50px; 
 }
-/* General form container styling */
-/* General form container styling */
+
 #contactForm {
     max-width: 600px;
     margin: 0 auto;
@@ -465,42 +462,41 @@ form button .fa-solid {
 /* Container for label and input to align them side by side */
 .form-group {
     display: flex;
-    flex-direction: column; /* Align label and input vertically */
-    margin-bottom: 20px; /* Space between elements */
+    flex-direction: column; 
+    margin-bottom: 20px; 
 }
-
 /* Styling labels */
 .form-group label {
     font-weight: bold;
     color: #333;
     margin-bottom: 8px;
-    text-align: left; /* Align label text to the left */
+    text-align: left; 
 }
 
-/* Styling input fields and textarea */
+
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-    width: 100%; /* Full width of the container */
+    width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
-    margin-bottom: 20px; /* Space between elements */
+    margin-bottom: 20px; 
 }
 
 /* Styling textarea specifically */
 .form-group textarea {
     resize: vertical;
     height: 150px;
-    width: 500px; /* Fixed width for the input fields */
+    width: 500px; 
 }
 
-/* Optional: Set a fixed width */
+
 .form-group input[type="text"],
 .form-group input[type="email"] {
-    width: 500px; /* Fixed width for the input fields */
+    width: 500px; 
 }
 
 
@@ -515,16 +511,14 @@ form button .fa-solid {
     cursor: pointer;
     transition: background-color 0.3s;
     width: 100%;
-    margin-top: 10px; /* Space above the button */
+    margin-top: 10px; 
 }
 
 /* Button hover effect */
 #contactForm button:hover {
     background-color: #0056b3;
 }
-/* checkbox-styles.css */
 
-/* Styling the container for the checkbox and label */
 .checkbox-group {
     margin-top: 15px;
     display: flex;
@@ -534,7 +528,7 @@ form button .fa-solid {
     margin-bottom: 40px;
 }
 
-/* Custom checkbox styling */
+
 .checkbox-group input[type="checkbox"] {
     position: relative;
     width: 20px;
@@ -548,8 +542,6 @@ form button .fa-solid {
     outline: none;
     transition: background-color 0.3s, border-color 0.3s;
 }
-
-/* Checkbox tick mark */
 .checkbox-group input[type="checkbox"]:checked::before {
     content: '\2713'; /* Unicode check mark */
     position: absolute;
@@ -559,21 +551,211 @@ form button .fa-solid {
     color: white;
 }
 
-/* Change background and border on hover */
 .checkbox-group input[type="checkbox"]:hover {
     border-color: red;
 }
 
-/* Change background when checked */
+
 .checkbox-group input[type="checkbox"]:checked {
     background-color: red;
     border-color: red;
 }
 
-/* Label styling */
+
 .checkbox-group label {
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
     color: #333;
+}
+ 
+ .calendar-container {
+    margin: 20px;
+    text-align: center;
+}
+
+#calendar {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h3 {
+    margin: 0;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.day:hover {
+    background-color: #e0e0e0;
+}
+.calendar-time-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.time-picker {
+    margin-left: 20px;
+}
+
+#digital-clock {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#time-select {
+    padding: 5px;
+    font-size: 16px;
+}
+.calendar-time-wrapper {
+    display: flex;
+    align-items: flex-start;
+    padding: 90px 90px;
+}
+
+.time-picker {
+    margin-left: 20px;
+}
+
+.digital-clock-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 10px 0;
+}
+
+.time-box {
+    width: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.colon {
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.ampm-buttons {
+    margin-left: 10px;
+}
+
+.ampm-buttons button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.ampm-buttons .active {
+    background-color: rgb(209, 7, 7);
+    color: white;
+}
+
+
+input[type="text"] {
+    border: none;
+    background: transparent;
+    width: 50px;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+}
+
+span {
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.selected-date-time-box {
+    background-color: #fff;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.day-header {
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.day-header div {
+    flex: 1; 
+    padding: 5px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px; 
+    padding-bottom: 60px; 
+}
+
+.day {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc; 
+    cursor: pointer;
+    background-color: #f9f9f9; /* Background color for each day */
+    border-radius: 20px;
+}
+
+.day:hover {
+    background-color: #f1b3b3; 
+}
+
+
+.calendar-header button {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 24px; 
+    padding: 0; 
+    margin: 0 10px;
+    color: #333;
+    font-weight: bold; 
+}
+
+.calendar-header button:hover {
+    color: rgb(209, 7, 7); /* Change color on hover for visibility */
+}
+.meeting-button button {
+background-color: rgb(209, 7, 7); 
+color: white; 
+padding: 15px 30px; 
+font-size: 18px; 
+border: none; 
+border-radius: 25px; 
+cursor: pointer; 
+}
+
+.meeting-button button:hover {
+    background-color: darkred; 
 }
