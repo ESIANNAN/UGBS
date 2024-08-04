@@ -759,3 +759,41 @@ cursor: pointer;
 .meeting-button button:hover {
     background-color: darkred; 
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        text-align: center;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .banner-container {
+        text-align: center;
+    }
+
+    .banner-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .centered-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-1, .text-2 {
+        padding: 10px;
+    }
+
+    .button-container {
+        text-align: center;
+    }
+
+    .slideshow-container {
+        width: 100%;
+    }
+}
