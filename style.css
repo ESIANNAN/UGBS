@@ -1,5 +1,5 @@
 /* General responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     /* Navbar adjustments */
     .navbar {
         flex-direction: column;
