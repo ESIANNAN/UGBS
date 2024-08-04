@@ -12,9 +12,6 @@
 <body>
     <div class="menu_wrapper">
         <div class="navbar" id="navbar">
-            <div class="hamburger-menu" onclick="toggleNavbar()">
-            <i class="fas fa-bars"></i>
-        </div>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> <span>About Us</span></a></li>
@@ -168,10 +165,7 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
-function toggleNavbar() {
-    var navbar = document.getElementById('navbar');
-    navbar.classList.toggle('active');
-}
+
     </script>
 
 </body>
