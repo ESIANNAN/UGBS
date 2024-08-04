@@ -19,7 +19,9 @@
                 <li><a href="update.html"><i class="fas fa-bell"></i> <span>Updates</span></a></li>
             </ul>
         </div>
-        
+        <div class="hamburger-menu" onclick="toggleNavbar()">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
     <div class="banner-container">
         <img src="banner.jpg" alt="Banner Image" class="banner-image">
@@ -165,7 +167,10 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
-
+function toggleNavbar() {
+    var navbar = document.getElementById('navbar');
+    navbar.classList.toggle('active');
+}
     </script>
 
 </body>
