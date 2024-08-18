@@ -45,13 +45,18 @@
                         <button id="pm-button">PM</button>
                     </div>
                     <select id="time-select">
-                      
                     </select>
                 </div>
-                <div class="meeting-button"><button>Schedule meeting</button></div>
+                <div class="meeting-button">
+                    <form id="appointment-form" method="POST" action="send_email.php">
+                        <input type="hidden" id="selected-date" name="date" />
+                        <input type="hidden" id="selected-time" name="time" />
+                        <input type="email" id="client-email" name="email" placeholder="Enter your email" required />
+                        <button type="submit">Schedule meeting</button>
+                    </form>
+                </div>
             </div>
         </div>
-
     </div>
 
     <footer>
@@ -106,13 +111,15 @@
             const pmButton = document.getElementById('pm-button');
             const dateDisplay = document.getElementById('date-display');
             const timeDisplay = document.getElementById('time-display');
+            const selectedDateInput = document.getElementById('selected-date');
+            const selectedTimeInput = document.getElementById('selected-time');
+            const clientEmailInput = document.getElementById('client-email');
 
             let isAM = true; // Default to AM
             let selectedDate = new Date(); // Store the selected date
             let currentMonth = selectedDate.getMonth(); // Track the displayed month
             let currentYear = selectedDate.getFullYear(); // Track the displayed year
 
-            
             function createCalendar(month, year) {
                 const daysInMonth = new Date(year, month + 1, 0).getDate();
                 const firstDay = new Date(year, month, 1).getDay();
@@ -168,10 +175,10 @@
                 });
             }
 
-            
             function updateDateDisplay() {
                 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 dateDisplay.textContent = selectedDate.toLocaleDateString(undefined, options); // Format the date with options
+                selectedDateInput.value = selectedDate.toISOString().split('T')[0]; // Set hidden input value
                 updateTimeDisplay(); // Update time display whenever the date changes
             }
 
@@ -193,6 +200,7 @@
                 const selectedTime = timeSelect.value.split(':');
                 hourInput.value = selectedTime[0]; // Set hour
                 minuteInput.value = selectedTime[1]; // Set minute
+                selectedTimeInput.value = timeSelect.value; // Set hidden input value
                 updateTimeDisplay(); // Update time display when time changes
             }
 
