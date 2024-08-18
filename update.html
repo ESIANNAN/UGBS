@@ -6,6 +6,34 @@
     <title>Subscribe to Updates</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9b60be4f95.js"></script>
+    <!-- intl-tel-input CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css">
+    <!-- Flag Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    <!-- Add custom CSS -->
+    <style>
+        .iti {
+            width: 100%;
+        }
+        .iti__flag-container {
+            margin-right: 10px;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-right: 10px;
+        }
+        .flag-icon {
+            width: 1.5em;
+            height: 1.5em;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
 </head>
 <body>
     <div class="menu_wrapper">
@@ -18,40 +46,133 @@
             </ul>
         </div>
     </div>
-
-    <div class="container">
-        <h2>Subscribe to Updates</h2>
-        <?php
-        // Check if form is submitted
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $email = $_POST["email"];
-            
-            // Validate email if needed
-            // Example validation: check if email is not empty and is a valid email address
-            if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                // Store email in a file (example: subscribers.txt)
-                $file = 'subscribers.txt';
-                $current = file_get_contents($file);
-                $current .= $email . "\n";
-                file_put_contents($file, $current);
-                
-                echo '<p class="success-message">Thank you for subscribing!</p>';
-            } else {
-                echo '<p class="error-message">Please enter a valid email address.</p>';
-            }
-        }
-        ?>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-            <label for="email">Enter your email address:</label>
-            <input type="email" id="email" name="email" placeholder="Your email address" required>
-            <button type="submit" class="subscribe-button">Subscribe</button>
-        </form>
+    <div class="update-text">
+        <p>Subscribe to our Newsletter</p>
     </div>
+    <div class="update-description">
+        <p>Sign up for regular updates from our office</p>
+    </div>
+    <form id="contactForm" method="POST" action="send_email.php">
+        <div class="form-group">
+            <label for="name">First name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="contact">Contact:</label>
+            <div style="display: flex; align-items: center;">
+                <select id="country-code" name="country_code" required>
+                    <!-- Options will be added dynamically -->
+                </select>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 
     <footer>
-        <!-- Footer content -->
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie sem at purus ullamcorper, ac lacinia odio blandit. Nam vulputate tempus rhoncus. Ut gravida dapibus dui, ac rhoncus ipsum pretium vestibulum. Donec ut lectus orci.</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>123 Street Name</p>
+                <p>City, Country</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p class="email-id">Email: info@example.com</p>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Updates</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            Tech Titans &copy; 2024 - All Rights Reserved
+        </p>
     </footer>
 
+    <!-- intl-tel-input JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        const countryCodeSelect = document.querySelector("#country-code");
+        const countries = [
+            { name: "United States", code: "+1", flag: "us" },
+            { name: "Canada", code: "+1", flag: "ca" },
+            { name: "United Kingdom", code: "+44", flag: "gb" },
+            { name: "Australia", code: "+61", flag: "au" },
+            { name: "Brazil", code: "+55", flag: "br" },
+            { name: "China", code: "+86", flag: "cn" },
+            { name: "France", code: "+33", flag: "fr" },
+            { name: "Germany", code: "+49", flag: "de" },
+            { name: "India", code: "+91", flag: "in" },
+            { name: "Japan", code: "+81", flag: "jp" },
+            { name: "South Korea", code: "+82", flag: "kr" },
+            { name: "Russia", code: "+7", flag: "ru" },
+            { name: "South Africa", code: "+27", flag: "za" },
+            { name: "Spain", code: "+34", flag: "es" },
+            { name: "Italy", code: "+39", flag: "it" },
+            { name: "Mexico", code: "+52", flag: "mx" },
+            { name: "Nigeria", code: "+234", flag: "ng" },
+            { name: "Saudi Arabia", code: "+966", flag: "sa" },
+            { name: "Sweden", code: "+46", flag: "se" },
+            { name: "Switzerland", code: "+41", flag: "ch" },
+            { name: "Turkey", code: "+90", flag: "tr" },
+            { name: "Ukraine", code: "+380", flag: "ua" },
+            { name: "Argentina", code: "+54", flag: "ar" },
+            { name: "Chile", code: "+56", flag: "cl" },
+            { name: "Colombia", code: "+57", flag: "co" },
+            { name: "Peru", code: "+51", flag: "pe" },
+            { name: "Venezuela", code: "+58", flag: "ve" },
+            { name: "Thailand", code: "+66", flag: "th" },
+            { name: "Malaysia", code: "+60", flag: "my" },
+            { name: "Singapore", code: "+65", flag: "sg" },
+            { name: "Hong Kong", code: "+852", flag: "hk" },
+            { name: "Indonesia", code: "+62", flag: "id" },
+            { name: "Philippines", code: "+63", flag: "ph" },
+            { name: "New Zealand", code: "+64", flag: "nz" },
+            { name: "Ireland", code: "+353", flag: "ie" },
+            { name: "Portugal", code: "+351", flag: "pt" }
+        ];
+
+        // Populate the dropdown menu
+        function populateCountryCodes() {
+            countries.forEach(country => {
+                const option = document.createElement("option");
+                option.value = country.code;
+                option.innerHTML = `<span class="flag-icon flag-icon-${country.flag}"></span> ${country.name} (${country.code})`;
+                countryCodeSelect.appendChild(option);
+            });
+        }
+
+        // Call the function to populate the dropdown
+        populateCountryCodes();
+    </script>
 </body>
 </html>
