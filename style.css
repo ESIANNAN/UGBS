@@ -759,3 +759,34 @@ cursor: pointer;
 .meeting-button button:hover {
     background-color: darkred; 
 }
+.update-text p{
+    font-size: 24px; 
+    font-weight: bold; 
+    padding: 0 450px;
+    margin-top: 60px; 
+
+}
+.update-description{
+    color:  #0b4a91;
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 0 450px; 
+    margin-bottom: 50px; 
+}
+.iti {
+    width: 100%;
+}
+.iti__flag-container {
+    margin-right: 10px;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-right: 10px;
+}
+
+
+
