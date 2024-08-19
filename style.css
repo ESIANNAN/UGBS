@@ -327,14 +327,13 @@ form button .fa-solid {
 .red-button-2:hover {
     background-color: darkred; 
 }
-/* Slideshow container */
+
 .slideshow-container {
     max-width: 80%; 
     position: relative;
     margin: 20px auto; 
 }
 
-/* Hide all slides by default */
 .slideshow-container {
     position: relative;
     max-width: 800px; 
@@ -398,7 +397,7 @@ form button .fa-solid {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Position the next button to the right */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -463,16 +462,16 @@ form button .fa-solid {
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
 }
 
-/* Container for label and input to align them side by side */
+
 .form-group {
     display: flex;
     flex-direction: column; 
     margin-bottom: 20px; 
 }
-/* Styling labels */
+
 .form-group label {
     font-weight: bold;
     color: #333;
@@ -493,7 +492,7 @@ form button .fa-solid {
     margin-bottom: 20px; 
 }
 
-/* Styling textarea specifically */
+
 .form-group textarea {
     resize: vertical;
     height: 150px;
@@ -507,7 +506,7 @@ form button .fa-solid {
 }
 
 
-/* Styling the submit button */
+
 #contactForm button {
     background-color: red;
     color: #fff;
@@ -521,7 +520,7 @@ form button .fa-solid {
     margin-top: 10px; 
 }
 
-/* Button hover effect */
+
 #contactForm button:hover {
     background-color: #0056b3;
 }
@@ -730,7 +729,7 @@ span {
     text-align: center;
     border: 1px solid #ccc; 
     cursor: pointer;
-    background-color: #f9f9f9; /* Background color for each day */
+    background-color: #f9f9f9; 
     border-radius: 20px;
 }
 
@@ -751,7 +750,7 @@ span {
 }
 
 .calendar-header button:hover {
-    color: rgb(209, 7, 7); /* Change color on hover for visibility */
+    color: rgb(209, 7, 7); 
 }
 .meeting-button button {
 background-color: rgb(209, 7, 7); 
@@ -793,6 +792,15 @@ select {
     width: 100%;
     padding: 0.5rem;
     margin-right: 10px;
+}
+.footer-logo {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.footer-logo img {
+    max-width: 130px;
+    height: auto; 
 }
 
 
